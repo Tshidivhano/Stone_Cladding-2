@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light"> <!-- Added: Explicitly tells browser to use light color scheme -->
     <title>Stone Cladding - Natural Stone Specialists</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +14,10 @@
     <style>
         /* Custom Styles */
         /* Ensures the page always renders in light mode, overriding system preferences */
-        html {
-            color-scheme: light;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FAF9F6; /* Light Cream */
-            color: #333333; /* Deep Slate */
+        html, body { /* Applied color-scheme to both html and body for broader effect */
+            color-scheme: light !important; /* Added !important for stronger override */
+            background-color: #FAF9F6 !important; /* Explicitly set background for body with !important */
+            color: #333333 !important; /* Explicitly set text color for body with !important */
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Poppins', sans-serif;
